@@ -69,7 +69,11 @@ export default function Basket({ onNavigate, basketItems = [], setBasketItems })
             <div className="basket-items-list">
               {basketItems.map((item) => (
                 <div key={item.id} className="basket-item-card">
-                  <img src={item.image} alt={item.title} className="basket-item-img" />
+                  <img 
+  src={`${import.meta.env.BASE_URL}${item.image ? item.image.replace(/^\//, '') : ''}`} 
+  alt={item.title} 
+  className="basket-item-img" 
+/>
                   <span className="basket-item-title">{item.title}</span>
 
                   <div className="basket-quantity-controls">
