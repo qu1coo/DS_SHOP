@@ -4,9 +4,17 @@ import productsData from '../data/products.json';
 import pointerIcon from '../assets/pointer.png';
 import trashIcon from '../assets/trash.png'; 
 import arrowIcon from '../assets/arrow.png';
+import logoRed from '../assets/logor.png';
 
-export default function Basket({ onNavigate, basketItems = [], setBasketItems }) {
-  const recentlyViewed = productsData.slice(0, 1);
+export default function Basket({ 
+  onNavigate, 
+  basketItems = [], 
+  setBasketItems, 
+  recentlyViewed = [], 
+  onSelectProduct, 
+  onAddToBasket 
+}) {
+  const viewedList = recentlyViewed.length > 0 ? recentlyViewed : productsData.slice(0, 1);
 
   const totalAmount = basketItems.reduce(
     (sum, item) => sum + item.price * (item.quantity || 1),
@@ -44,7 +52,16 @@ export default function Basket({ onNavigate, basketItems = [], setBasketItems })
           <img src={pointerIcon} alt="Back" className="pointer-icon" />
           BACK TO THE MAIN
         </button>
-        <div className="header-logo">DS SHOP</div>
+
+        <div 
+          className="basket-logo-brand" 
+          onClick={() => onNavigate('main')}
+          style={{ cursor: 'pointer' }}
+        >
+          <img src={logoRed} alt="DS Logo" className="basket-logo-img" />
+          <span className="basket-logo-text">DS SHOP</span>
+        </div>
+
         <div className="basket-header-spacer"></div>
       </header>
 
@@ -52,7 +69,6 @@ export default function Basket({ onNavigate, basketItems = [], setBasketItems })
         <h1 className="basket-title">BASKET</h1>
 
         {basketItems.length === 0 ? (
-          /* Пустая корзина */
           <div className="empty-basket-block">
             <h2 className="empty-basket-message">YOUR SHOPPING BASKET IS EMPTY</h2>
             <button
@@ -64,16 +80,15 @@ export default function Basket({ onNavigate, basketItems = [], setBasketItems })
             </button>
           </div>
         ) : (
-          /* Заполненная корзина */
           <div className="basket-content-grid">
             <div className="basket-items-list">
               {basketItems.map((item) => (
                 <div key={item.id} className="basket-item-card">
                   <img 
-  src={`${import.meta.env.BASE_URL}${item.image ? item.image.replace(/^\//, '') : ''}`} 
-  alt={item.title} 
-  className="basket-item-img" 
-/>
+                    src={`${import.meta.env.BASE_URL}${item.image ? item.image.replace(/^\//, '') : ''}`} 
+                    alt={item.title} 
+                    className="basket-item-img" 
+                  />
                   <span className="basket-item-title">{item.title}</span>
 
                   <div className="basket-quantity-controls">
@@ -120,9 +135,15 @@ export default function Basket({ onNavigate, basketItems = [], setBasketItems })
                   type="text"
                   placeholder="Do you have a promo code or a certificate?"
                 />
-                <img src={arrowIcon} alt="Apply" className="promo-arrow-img" />
+                <button className="promo-btn" type="button">
+                  <img src={arrowIcon} alt="Apply" className="promo-arrow-img" />
+                </button>
               </div>
-              <button className="checkout-btn" type="button">
+              <button 
+                className="checkout-btn" 
+                type="button"
+                onClick={() => onNavigate('checkout')}
+              >
                 Checkout
               </button>
             </aside>
@@ -132,10 +153,12 @@ export default function Basket({ onNavigate, basketItems = [], setBasketItems })
         <section className="recently-viewed-section">
           <h2 className="recently-viewed-title">RECENTLY VIEWED</h2>
           <div className="recently-viewed-grid">
-            {recentlyViewed.map((product) => (
+            {viewedList.map((product) => (
               <ProductCard
                 key={product.id}
                 product={product}
+                onAddToBasket={() => onAddToBasket && onAddToBasket(product)}
+                onSelect={() => onSelectProduct && onSelectProduct(product)}
               />
             ))}
           </div>

@@ -3,30 +3,117 @@
     "id": 1,
     "title": "Dark Souls: Beyond death. Book 1.",
     "price": 1490,
-    "image": "assets/Book1.png"
+    "image": "assets/Book1.png",
+    "category": "books",
+    "specs": "Hardcover, 268x168 mm, 424 pages.",
+    "description": "To date, the Dark Souls saga is one of the most important in the gaming industry. She launched the whole soulslike subgenre, and her games are well known for their difficulty and rich, mysterious universe. This book will give you a glimpse behind the scenes of the creation of the iconic franchise. Damien Meschery and Sylvain Romier describe the combat mechanics and unusual ENT, talk about the characters and plots of the first three games: Demon's Souls, Dark Souls and Dark Souls II. The gameplay, the universe, the music, the themes, the legacy — everything has been studied down to the smallest detail. Find out how the Souls series was developed, how it was perceived by the gaming community, and how it became a classic and achieved such fantastic success!"
   },
   {
     "id": 2,
     "title": "Dark Souls: Beyond Death. Book 2.",
     "price": 1490,
-    "image": "assets/Book2.png"
+    "image": "assets/Book2.png",
+    "category": "books",
+    "specs": "Hardcover, 218x142 mm, 576 pages.",
+    "description": "Bloodborne and Dark Souls III are some of the most popular games developed by FromSoftware. They share many gameplay elements, level design and style, and are famous for their high difficulty and unusual world. This book will immerse you in the unique worlds of Hidetaki Miyazaki's two legendary games. In the previous volume, Damien Meschery and Sylvain Romier told the story of the first three games in the series, and now they will introduce readers to Bloodborne and Dark Souls III. They will present every aspect: the world, the plot, the characters, the themes and, of course, the music and the legacy. You will learn about how each game was created, what ideas underlie them and how they influenced the gaming industry. The book also offers an interesting analysis of the gameplay and mechanics that make these games so exciting and beloved."
   },
   {
     "id": 3,
     "title": "Oscar Knight of Astora Dark Souls Action Figure",
     "price": 8190,
-    "image": "assets/oscar.png"
+    "image": "assets/oscar.png",
+    "category": "figurines",
+    "specs": "Original Banpresto Dark Souls sculpture Collection Vol.4 Oscar Knight of Astora 56809 Figurine height 12 cm.",
+    "description": "This detailed action figure captures the essence of the iconic Oscar Knight of Astora from the Dark Souls universe. Standing at 12 cm tall, this collectible is crafted with precision and attention to detail, making it a must-have for any fan of the series."
   },
   {
     "id": 4,
     "title": "Black Knight Dark Souls sculpture Collection",
     "price": 8690,
-    "image": "assets/black_knight.png"
+    "image": "assets/black_knight.png",
+    "category": "figurines",
+    "specs": "Original Banpresto Dark Souls sculpture Collection Vol.3 Black Knight 55680 Figurine height 26 cm.",
+    "description": "This detailed sculpture captures the essence of the iconic Black Knight from the Dark Souls universe. Standing at 26 cm tall, this collectible is crafted with precision and attention to detail, making it a must-have for any fan of the series."
   },
   {
     "id": 5,
     "title": "Dark Souls Remastered Cartridge",
     "price": 2990,
-    "image": "assets/cartridge.png"
+    "image": "assets/cartridge.png",
+    "category": "games",
+    "specs": "Nintendo Switch game cartridge.",
+    "description": "Experience the haunting world of Dark Souls like never before with the Dark Souls Remastered edition. This enhanced version features improved graphics, refined gameplay mechanics, and includes all previously released content."
+  },
+  {
+    "id": 6,
+    "title": "Ring",
+    "price": 750,
+    "image": "assets/ring.png",
+    "category": "accessories",
+    "specs": "Dark Souls inspired ring, made of stainless steel.",
+    "description": "This Dark Souls inspired ring is a perfect accessory for fans of the series. Crafted from high-quality stainless steel, it features intricate designs that pay homage to the iconic elements of the Dark Souls universe. Whether you're a collector or simply want to show your love for the game, this ring is a stylish and meaningful addition to your collection."
+  },
+  {
+    "id": 7,
+    "title": "Cup",
+    "price": 1200,
+    "image": "assets/cup.png",
+    "category": "accessories",
+    "specs": "Ceramic black mug, 450 ml.",
+    "description": "This mug is perfect for enjoying your favorite hot beverage while immersing yourself in the dark and mysterious world of Dark Souls. The high-quality ceramic material ensures durability, and the 450 ml capacity allows for generous servings of coffee, tea, or any other drink of your choice. The sleek black design features iconic Dark Souls imagery, making it a must-have accessory for fans of the series."
+  },
+  {
+    "id": 8,
+    "title": "Badge",
+    "price": 650,
+    "image": "assets/badge.png",
+    "category": "accessories",
+    "specs": "Dark Souls inspired badge, made of metal.",
+    "description": "This Dark Souls inspired badge is a perfect accessory for fans of the series. Crafted from high-quality metal, it features intricate designs that pay homage to the iconic elements of the Dark Souls universe. Whether you're a collector or simply want to show your love for the game, this badge is a stylish and meaningful addition to your collection."
+  },
+  {
+    "id": 9,
+    "title": "Book 3",
+    "price": 2300,
+    "image": "assets/book3.png",
+    "category": "comics",
+    "specs": "Dark Souls comic book, 128 pages.",
+    "description": "Dive deeper into the world of Dark Souls with this official comic book. Packed with stunning artwork and compelling storytelling, this issue explores the rich lore and characters that make the series so beloved."  
+  },
+  {
+    "id": 10,
+    "title": "Book 4",
+    "price": 2600,
+    "image": "assets/book4.png",
+    "category": "comics",
+    "specs": "Dark Souls comic book, 144 pages.",
+    "description": "Continue your journey through the Dark Souls universe with this official comic book. Featuring captivating illustrations and engaging narratives, this issue delves into the mysteries and adventures that await in the dark and challenging world of Dark Souls."
+  },
+  {
+    "id": 11,
+    "title": "Tshirt",
+    "price": 1690,
+    "image": "assets/tshirt.png",
+    "category": "clothes",
+    "specs": "Dark Souls inspired t-shirt, made of 100% cotton.",
+    "description": "This Dark Souls inspired t-shirt is a perfect addition to any fan's wardrobe. Made from 100% cotton, it offers comfort and durability while showcasing iconic designs from the Dark Souls universe. Whether you're exploring the world of Dark Souls or simply want to express your love for the series, this t-shirt is a stylish and meaningful choice."
+  },
+  {
+    "id": 12,
+    "title": "Tshirt",
+    "price": 1890,
+    "image": "assets/tshirt2.png",
+    "category": "clothes",
+    "specs": "Dark Souls inspired t-shirt, made of 100% cotton.",
+    "description": "This Dark Souls inspired t-shirt is a perfect addition to any fan's wardrobe. Made from 100% cotton, it offers comfort and durability while showcasing iconic designs from the Dark Souls universe. Whether you're exploring the world of Dark Souls or simply want to express your love for the series, this t-shirt is a stylish and meaningful choice."
+  },
+  {
+    "id": 13,
+    "title": "Steam gift Dark Souls 2 Bundle",
+    "price": 4900,
+    "image": "assets/steamgift.png",
+    "category": "games",
+    "specs": "Steam gift card for Dark Souls 2 Bundle.",
+    "description": "Gift the ultimate Dark Souls experience with this Steam gift card for the Dark Souls 2 Bundle. This bundle includes the base game and all its DLCs, allowing players to fully immerse themselves in the challenging and atmospheric world of Dark Souls 2. Perfect for fans of the series or those looking to start their journey in the Dark Souls universe."
   }
 ]

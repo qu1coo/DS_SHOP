@@ -1,10 +1,11 @@
 import React from 'react';
-import tgIcon from '../assets/tg.png'
-import vkIcon from '../assets/vk.png'
+import tgIcon from '../assets/tg.png';
+import vkIcon from '../assets/vk.png';
+import logoWhite from '../assets/logow.png';
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer-top">
         <div className="footer-col">
           <h4>Support</h4>
@@ -39,7 +40,6 @@ export default function Footer() {
           <a href="mailto:support@ds.shop" className="footer-email">support@ds.shop</a>
           
           <div className="social-links">
-
             <a href="#" className="social-btn" aria-label="VK">
               <img src={vkIcon} alt="Vk" className="foother-btn-img" />
             </a>
@@ -52,7 +52,11 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <div className="footer-logo">DS SHOP</div>
+        <div className="footer-logo">
+          <img src={logoWhite} alt="DS Logo" className="footer-logo-img" />
+          <span>DS SHOP</span>
+        </div>
+        
         <div className="footer-copyright">
           Legal & Socials: Privacy Policy, Terms of Service, © 2026 DS Shop. All rights reserved.
         </div>
